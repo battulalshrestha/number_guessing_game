@@ -12,5 +12,6 @@ py -m venv your_env &&  cd app
 pip install -r requirements &&  pip install -e // you can do *
 ```
 #contribution 
-you are heartly welcome to make contribution to the project and you can add new awesome feature to make more realiable software
+    you are heartly welcome to make contribution to the project and you can add new awesome 
+   feature to make more realiable software
 
