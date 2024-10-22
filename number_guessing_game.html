@@ -1,0 +1,148 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number guessing game</title>
+</head>
+<body>
+<nav>
+<a href="/" aria-current="page">Home</a>
+</nav>
+<div id="wrapper">
+<h1>Number guessing game</h1>
+<p>Try and guess a random number between 1 and 100</p>
+<p>you have 10 attempts to guess the right number</p>
+</br>
+<form class="form">
+<label for="guessfield" id="guess">Guess the number</label>
+<input type="text" id="guessfield" class="guessfield">
+<input type="submit" id="sub" value="submit guess" class="guessSubmit">
+</form>
+<div class="result">  
+<p>Previous guesses:<span class="guesses"></span></p>   
+<p>Guess remaining:<span class="lastResult">10</span></p>           
+</div>
+</div>
+</body>
+</html -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <style>
+        /* Style for the navigation */
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #ff6347;
+        }
+
+        /* Style for the wrapper */
+        #wrapper {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Heading style */
+        h1 {
+            color: #333;
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Form elements */
+        .form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .guessfield {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .guessSubmit {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #ff6347;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .guessSubmit:hover {
+            background-color: #e5533d;
+        }
+
+        /* Result section */
+        .result {
+            margin-top: 20px;
+        }
+
+        .guesses, .lastResult {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <a href="/" aria-current="page">Home</a>
+</nav>
+<div id="wrapper">
+    <h1>Number Guessing Game</h1>
+    <p>Try and guess a random number between 1 and 100</p>
+    <p>You have 10 attempts to guess the right number</p>
+    <form class="form">
+        <label for="guessfield" id="guess">Guess the number</label>
+        <input type="text" id="guessfield" class="guessfield">
+        <input type="submit" id="sub" value="Submit Guess" class="guessSubmit">
+    </form>
+    <div class="result">  
+        <p>Previous guesses: <span class="guesses"></span></p>   
+        <p>Guesses remaining: <span class="lastResult">10</span></p>   
+        <p class="lowORhi"></p>        
+    </div>
+</div>
+<script src="guessing_game.js"></script>
+</body>
+</html>
